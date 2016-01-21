@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="h7M-nv-V3i">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Who Are You?-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MasterViewControllerID" id="BYZ-38-t0r" customClass="MasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVa-FE-bxI">
+                                <rect key="frame" x="141" y="134" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Mafia"/>
+                                <connections>
+                                    <segue destination="9t5-Mh-A9b" kind="push" id="7qG-kf-r7h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2q-60-J2c">
+                                <rect key="frame" x="140" y="204" width="41" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Sherif"/>
+                                <connections>
+                                    <segue destination="ewU-Fe-Tut" kind="push" id="JFa-Rb-kqM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jVa-FE-bxI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="blR-0Y-6xG"/>
+                            <constraint firstItem="jVa-FE-bxI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnz-QZ-UnG"/>
+                            <constraint firstItem="b2q-60-J2c" firstAttribute="top" secondItem="jVa-FE-bxI" secondAttribute="bottom" constant="40" id="dHt-nM-jsK"/>
+                            <constraint firstItem="b2q-60-J2c" firstAttribute="centerX" secondItem="jVa-FE-bxI" secondAttribute="centerX" id="tTC-OQ-bet"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Who Are You?" id="4mI-st-Dez"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2EW-AC-6K9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h7M-nv-V3i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOQ-ge-c7t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rLw-Jc-T3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yi4-B9-Msa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.53333333333333" y="-358.78666666666669"/>
+        </scene>
+        <!--Mafia-->
+        <scene sceneID="0R2-wR-2nd">
+            <objects>
+                <viewController storyboardIdentifier="MafiaGameViewControllerID" id="9t5-Mh-A9b" customClass="MafiaGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tca-G5-wia"/>
+                        <viewControllerLayoutGuide type="bottom" id="f0l-XJ-4f8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cgf-KV-m50">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-kL-IOR">
+                                <rect key="frame" x="123" y="190" width="74" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Rob Bank"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpi-UL-gAn">
+                                <rect key="frame" x="132" y="338" width="57" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <segue destination="5Dv-iu-H1G" kind="push" id="Z5G-aN-vor"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f0l-XJ-4f8" firstAttribute="top" secondItem="Jpi-UL-gAn" secondAttribute="bottom" constant="200" id="GQC-XF-3dw"/>
+                            <constraint firstItem="qq1-kL-IOR" firstAttribute="leading" secondItem="cgf-KV-m50" secondAttribute="leadingMargin" constant="107" id="mjQ-Ew-yDC"/>
+                            <constraint firstItem="Jpi-UL-gAn" firstAttribute="centerX" secondItem="cgf-KV-m50" secondAttribute="centerX" id="p3m-Dm-xSS"/>
+                            <constraint firstItem="qq1-kL-IOR" firstAttribute="top" secondItem="tca-G5-wia" secondAttribute="bottom" constant="126" id="qOn-pJ-zdU"/>
+                            <constraint firstItem="qq1-kL-IOR" firstAttribute="centerX" secondItem="cgf-KV-m50" secondAttribute="centerX" id="sQG-F3-XKV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qq1-kL-IOR" secondAttribute="trailing" constant="107" id="sjf-Gt-w9x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mafia" id="83y-Zc-iU3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8w-cN-UcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-549"/>
+        </scene>
+        <!--Sherif-->
+        <scene sceneID="x6w-3j-Kr3">
+            <objects>
+                <viewController storyboardIdentifier="SherifGameViewController" id="ewU-Fe-Tut" customClass="SherifGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CNt-Jg-6Sc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q2a-ng-3kS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ELg-Mk-QHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZQ-ay-r7t">
+                                <rect key="frame" x="116" y="190" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Save Damsel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyt-EB-QGt">
+                                <rect key="frame" x="132" y="338" width="57" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <segue destination="hjC-0t-GfC" kind="push" id="P6d-oA-vgS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q2a-ng-3kS" firstAttribute="top" secondItem="Oyt-EB-QGt" secondAttribute="bottom" constant="200" id="8yr-Bi-t3B"/>
+                            <constraint firstItem="hZQ-ay-r7t" firstAttribute="top" secondItem="CNt-Jg-6Sc" secondAttribute="bottom" constant="126" id="dd3-jJ-1ba"/>
+                            <constraint firstItem="Oyt-EB-QGt" firstAttribute="centerX" secondItem="ELg-Mk-QHZ" secondAttribute="centerX" id="fHn-XA-CB2"/>
+                            <constraint firstItem="hZQ-ay-r7t" firstAttribute="centerX" secondItem="ELg-Mk-QHZ" secondAttribute="centerX" id="vFM-Rt-aPR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sherif" id="hxq-Ji-2tu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flU-d1-Oxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="98"/>
+        </scene>
+        <!--Who to Investigate?-->
+        <scene sceneID="hUa-33-7MS">
+            <objects>
+                <viewController storyboardIdentifier="SheifInvestigateViewControllerID" id="hjC-0t-GfC" customClass="SheifInvestigateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FX8-AQ-uXG"/>
+                        <viewControllerLayoutGuide type="bottom" id="qCn-q9-bZx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ybk-mg-swv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-ea-7uA">
+                                <rect key="frame" x="122" y="269" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Interrogate"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8d-7G-v2A">
+                                <rect key="frame" x="120" y="429" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson4:" destination="hjC-0t-GfC" eventType="touchUpInside" id="57e-kJ-82F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hju-bC-IlF">
+                                <rect key="frame" x="120" y="365" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson2:" destination="hjC-0t-GfC" eventType="touchUpInside" id="xnm-ea-7gX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHc-vj-Kee">
+                                <rect key="frame" x="120" y="461" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson5:" destination="hjC-0t-GfC" eventType="touchUpInside" id="Pre-w4-DsF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K12-vw-K5T">
+                                <rect key="frame" x="120" y="332" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson1:" destination="hjC-0t-GfC" eventType="touchUpInside" id="WDM-hM-2C3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-lB-a9Y">
+                                <rect key="frame" x="120" y="397" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson3:" destination="hjC-0t-GfC" eventType="touchUpInside" id="KuT-08-VrP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-lT-zZP">
+                                <rect key="frame" x="120" y="492" width="80" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Accomplice"/>
+                                <connections>
+                                    <action selector="investigatePerson6:" destination="hjC-0t-GfC" eventType="touchUpInside" id="Y9W-Ph-WMz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BYd-lT-zZP" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="0dY-la-GvY"/>
+                            <constraint firstItem="cl2-ea-7uA" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="205" id="25x-Lr-TLn"/>
+                            <constraint firstItem="4ze-lB-a9Y" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="CP6-17-nT9"/>
+                            <constraint firstItem="4ze-lB-a9Y" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="333" id="MYM-E1-NtB"/>
+                            <constraint firstItem="K12-vw-K5T" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="268" id="Moq-ta-U0p"/>
+                            <constraint firstItem="cl2-ea-7uA" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="POi-De-UgH"/>
+                            <constraint firstItem="K12-vw-K5T" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="UFg-B5-lpL"/>
+                            <constraint firstItem="fHc-vj-Kee" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="auv-Cr-vla"/>
+                            <constraint firstItem="qCn-q9-bZx" firstAttribute="top" secondItem="BYd-lT-zZP" secondAttribute="bottom" constant="46" id="cf7-Ta-wvK"/>
+                            <constraint firstItem="R8d-7G-v2A" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="365" id="d6h-CU-Ddd"/>
+                            <constraint firstItem="fHc-vj-Kee" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="397" id="gZz-S7-Ye5"/>
+                            <constraint firstItem="hju-bC-IlF" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="ihZ-Ps-fy4"/>
+                            <constraint firstItem="R8d-7G-v2A" firstAttribute="centerX" secondItem="Ybk-mg-swv" secondAttribute="centerX" id="kaD-7G-GX0"/>
+                            <constraint firstItem="hju-bC-IlF" firstAttribute="top" secondItem="FX8-AQ-uXG" secondAttribute="bottom" constant="301" id="puC-3c-FjD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Who to Investigate?" id="TA1-Nc-btG"/>
+                    <connections>
+                        <outlet property="investigatePerson1" destination="K12-vw-K5T" id="sFp-UD-WfK"/>
+                        <outlet property="investigatePerson2" destination="hju-bC-IlF" id="fSI-i3-Bgs"/>
+                        <outlet property="investigatePerson3" destination="4ze-lB-a9Y" id="v3H-Bz-NhV"/>
+                        <outlet property="investigatePerson4" destination="R8d-7G-v2A" id="kFO-0g-ChE"/>
+                        <outlet property="investigatePerson5" destination="fHc-vj-Kee" id="sXd-Q3-qeV"/>
+                        <outlet property="investigatePerson6" destination="BYd-lT-zZP" id="jgF-7i-crJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eQ-qn-URd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1395" y="98"/>
+        </scene>
+        <!--Who to Whack?-->
+        <scene sceneID="MuA-Br-Q6C">
+            <objects>
+                <viewController storyboardIdentifier="MafiaWhackViewControllerID" id="5Dv-iu-H1G" customClass="MafiaWhackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJa-Pz-5aU"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxd-dJ-hS8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hte-vn-rXk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUc-fJ-5pG">
+                                <rect key="frame" x="133" y="269" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Execute"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mh-WA-aM8">
+                                <rect key="frame" x="127" y="343" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson1:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="3fz-vO-oND"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD6-le-JWp">
+                                <rect key="frame" x="127" y="374" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson2:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="rCD-5i-6Sd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztO-dp-SKY">
+                                <rect key="frame" x="127" y="469" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson5:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="ZYB-Qr-NFV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy0-Uo-Qlq">
+                                <rect key="frame" x="127" y="437" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson4:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="305-FC-thy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QL-Iq-wuU">
+                                <rect key="frame" x="127" y="500" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson6:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="HZk-tL-ZPL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBz-YP-GEX">
+                                <rect key="frame" x="127" y="407" width="67" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Informant"/>
+                                <connections>
+                                    <action selector="excutePerson3:" destination="5Dv-iu-H1G" eventType="touchUpInside" id="4hY-mR-hKB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cy0-Uo-Qlq" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="1A8-ke-xB1"/>
+                            <constraint firstItem="ztO-dp-SKY" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="9je-uZ-0Kl"/>
+                            <constraint firstItem="KD6-le-JWp" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="BiL-Kp-Sm2"/>
+                            <constraint firstItem="PUc-fJ-5pG" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="IhC-Yf-tWz"/>
+                            <constraint firstItem="9mh-WA-aM8" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="PVc-US-gFn"/>
+                            <constraint firstItem="cy0-Uo-Qlq" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="373" id="ZAy-cU-VLO"/>
+                            <constraint firstItem="ztO-dp-SKY" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="405" id="ZTA-qQ-xbA"/>
+                            <constraint firstItem="9mh-WA-aM8" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="279" id="bMC-1d-4Uo"/>
+                            <constraint firstItem="QBz-YP-GEX" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="imv-y1-RUE"/>
+                            <constraint firstItem="3QL-Iq-wuU" firstAttribute="centerX" secondItem="Hte-vn-rXk" secondAttribute="centerX" id="j70-Jc-Reg"/>
+                            <constraint firstItem="QBz-YP-GEX" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="343" id="jGH-xC-2Ts"/>
+                            <constraint firstItem="fxd-dJ-hS8" firstAttribute="top" secondItem="3QL-Iq-wuU" secondAttribute="bottom" constant="38" id="pPK-08-iyq"/>
+                            <constraint firstItem="PUc-fJ-5pG" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="205" id="qTR-Nh-wXK"/>
+                            <constraint firstItem="KD6-le-JWp" firstAttribute="top" secondItem="fJa-Pz-5aU" secondAttribute="bottom" constant="310" id="tjB-6B-QWx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Who to Whack?" id="kQm-EO-a4k"/>
+                    <connections>
+                        <outlet property="excutePerson1" destination="9mh-WA-aM8" id="5mu-jJ-tn7"/>
+                        <outlet property="excutePerson2" destination="KD6-le-JWp" id="J5w-zu-I69"/>
+                        <outlet property="excutePerson3" destination="QBz-YP-GEX" id="K94-x1-32j"/>
+                        <outlet property="excutePerson4" destination="cy0-Uo-Qlq" id="PZv-4j-IU5"/>
+                        <outlet property="excutePerson5" destination="ztO-dp-SKY" id="PP3-XV-Mwz"/>
+                        <outlet property="excutePerson6" destination="3QL-Iq-wuU" id="yMQ-z3-8XZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PiE-Vw-A8y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1395" y="-549"/>
+        </scene>
+    </scenes>
+</document>
